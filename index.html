@@ -7,22 +7,63 @@
      <!-- tailwind and daisyui -->   
      <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.4/dist/full.css" rel="stylesheet" type="text/css" />
      <script src="https://cdn.tailwindcss.com"></script>
-     <!-- manrope google font -->
+     <!-- lato google font -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
      <!-- font awesome -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>
+        .lato-font{
+            font-family: 'Lato', sans-serif;
+        }
+     </style>
 </head>
-<body>
+<body class="lato-font">
     <header>
-
+        <!-- Navbar Section starts -->
+        <div class="navbar bg-[#F85559] rounded-3xl">
+            <div class="font-normal gap-4 text-white hidden lg:flex md:flex">
+               <p>Home</p>
+               <p>About Us</p>
+               <p>Shop</p>
+               <p>All Fruits</p>
+            </div>
+            <div class="flex-1 justify-start lg:justify-center md:justify-center">
+              <img src="images/logo.png" alt="">
+              <a class="btn btn-ghost normal-case text-xl text-white">Fruit Burst</a>
+            </div>
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                    <li><a>Search Bar</a></li>
+                </ul>
+            </div>
+            <div class="lg:flex md:flex hidden gap-2">
+              <div class="form-control">
+                <input type="text" placeholder="Search here" class="input input-bordered w-36 md:w-40 lg:w-auto rounded-3xl relative" />
+                <i class="fa-solid fa-magnifying-glass absolute right-6 top-8"></i>
+              </div>
+            </div>
+          </div>
+           <!-- Navbar Section ends -->
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
